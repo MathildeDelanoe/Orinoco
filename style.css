@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'scratchregular';
+    src: url('font/web fonts/scratch_regular_macroman/Scratch_-webfont.eot');
+    src: url('font/web fonts/scratch_regular_macroman/Scratch_-webfont.eot?#iefix') format('embedded-opentype'),
+            url('font/web fonts/scratch_regular_macroman/Scratch_-webfont.woff') format('woff'),
+            url('font/web fonts/scratch_regular_macroman/Scratch_-webfont.ttf') format('truetype'),
+            url('font/web fonts/scratch_regular_macroman/Scratch_-webfont.svg#scratchregular') format('svg');
+}
+
+body
+{
+    background-color: rgb(255,232,217);
+}
+
+header, footer
+{
+    background-color:rgb(255,211,183);
+}
+
+header nav span
+{
+    font-family: scratchregular, Arial, sans-serif;
+    font-size:1.5em;
+}
+
+header nav i
+{
+    font-size:1.2em;
+}
+    
+footer
+{
+    min-height: 50px;
+}
+
+section img
+{
+    border: 1px solid rgb(216, 216, 216);
+    height: 350px;
+}
+
+.card
+{
+    box-shadow:10px 5px 5px grey;
+}
+
+#catalogue .container-fluid
+{
+    width:80%;
+}
+
+#ficheProduit .container-fluid
+{
+    width: 30%;
+}
+
+nav div ul li:last-child
+{
+    position: relative;
+}
+nav div ul li div
+{
+    background-color: rgb(255,232,217);
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 22px;
+    margin: 0px;
+    padding: 0px;
+}
+nav div ul li div p
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+}
+
+/* Gestion de la question apres ajout au panier*/
+#apresPanier
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border: 1px solid grey;
+    background-color: white;
+    border-radius:5px;
+    padding: 10px;
+    opacity: 0;
+}
+
+/*pour panier.html*/
+#panier_recap
+{
+    width:30%;
+
+}
+
+#panier_recap img
+{
+    width:100px;
+    height:100px;
+}
+
+td:last-child
+{
+    position: relative;
+}
+
+#formulaire label
+{
+    font-size:0.9em;
+}
+
+@media screen and (max-width: 1024px)
+{
+    section img
+    {
+        height: 55vw;
+    }
+
+    #panier_recap
+    {
+        width:90%;
+    }
+    #panier_recap img
+    {
+        width:100px;
+        height:100px;
+    }
+}
+
+
+/* -md */
+@media screen and (max-width: 991px)
+{
+    #ficheProduit .container-fluid
+    {
+        width: 80%;
+    }
+    header li
+    {   
+        border-top:1px solid;
+        padding-left:5px;
+    }
+    header ul
+    {
+        margin-top:10px;
+    }
+    nav div ul li div
+    {
+        top: 0px;
+        left: 50px;
+    }
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1281px)
+{
+    section img
+    {
+        height: 25vw;
+    }
+
+    #catalogue .container-fluid
+    {
+        width:90%;
+    }
+}

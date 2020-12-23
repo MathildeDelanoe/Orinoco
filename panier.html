@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      
+    <script src="https://kit.fontawesome.com/81ffb5cc79.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/ico" href="img/favicon.png">
+    <title>Oriteddy - Votre panier</title>
+    <meta charset="utf-8" >
+    <meta name="description" content="Validation de votre panier">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-shopping-cart pr-1"></i>
+                <span>Orinoco</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-reset" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-reset" href="panier.html">Panier</a>
+                        <div class="rounded-circle d-flex justify-content-center align-self-center"><p></p></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="text-center py-5">Détail de votre panier</h1>
+        <div id="panier_recap" class="container-fluid">
+        </div>
+        <div id="formulaire" class="container-fluid">
+            <h2 class="text-center mt-5">Pour finaliser votre commande, merci de remplir les champs suivants : </h2>    
+            <table class="my-4 mx-auto">
+                <tbody class="text-right">
+                    <tr>
+                        <td><label for="firstName" class="my-4 mr-3">Prénom : </label></td>
+                        <td><input type="text" id="firstName" pattern="[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ- ]{0,30}[A-Za-zÀ-ÖØ-öø-ÿ]" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName" class="my-4 mr-3">Nom : </label></td>
+                        <td><input type="text" id="lastName" pattern="[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ- ]{0,30}[A-Za-zÀ-ÖØ-öø-ÿ]" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address" class="my-4 mr-3">Adresse : </label></td>
+                        <td><input type="text" id="address" pattern="[0-9A-Za-zÀ-ÖØ-öø-ÿ- ]{10,50}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city" class="my-4 mr-3">Ville : </label></td>
+                        <td><input type="text" id="city" pattern="[A-Za-zÀ-ÖØ-öø-ÿ- ]{2,50}" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email" class="my-4 mr-3">Adresse e-mail : </label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text-center"><input type="submit" class="my-3" id="submitButton" value="Envoyer" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="container-fluid py-3 mt-auto">
+        <div class="row mx-1">
+            <div class="col-12 col-lg-4"><a class="text-decoration-none text-reset" href="#">Conditions générales de vente</a></div>
+            <div class="col-12 col-lg-4 text-lg-center"><a class="text-decoration-none text-reset" href="#">Données personnelles</a></div>
+            <div class="col-12 col-lg-4 text-lg-right"><a class="text-decoration-none text-reset" href="mailto:contact@orinoco.fr">Nous contacter</a></div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/commun.js"></script>
+    <script src="js/panier.js"></script>
+  </body>
+
+</html>
